@@ -4,123 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roku Developer Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0b0b0c;
-            color: #ffffff;
-        }
-        header {
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(180deg, #4b2bb6, #0b0b0c);
-        }
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.4rem;
-            opacity: 0.8;
-        }
-        .container {
-            width: 85%;
-            max-width: 1100px;
-            margin: auto;
-        }
-        .section {
-            padding: 50px 0;
-        }
-        h2 {
-            border-left: 6px solid #8c52ff;
-            padding-left: 15px;
-            margin-bottom: 30px;
-            font-size: 2rem;
-        }
-        /* Skills */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .tag {
-            background: #1b1b1e;
-            padding: 10px 18px;
-            border: 1px solid #8c52ff;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-        /* Project Cards */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
-        .card {
-            background: #1a1a1d;
-            border: 1px solid #333;
-            padding: 20px;
-            border-radius: 12px;
-            transition: 0.3s;
-        }
-        .card:hover {
-            border-color: #8c52ff;
-            transform: translateY(-5px);
-        }
-        .card h3 {
-            margin-top: 0;
-        }
-        .card a {
-            color: #8c52ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            padding: 40px;
-            font-size: 1.1rem;
-            border-top: 1px solid #333;
-        }
-        footer a {
-            color: #8c52ff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HERO -->
-    <header>
-        <h1>Hi, I'm Prashanth YN</h1>
-        <p>Roku Developer | BrightScript | OTT App Specialist</p>
-    </header>
+<!-- HERO -->
+<header class="hero">
+    <h1>Hi, I’m Prashanth YN</h1>
+    <p class="tagline">
+        Senior Roku Developer · BrightScript & SceneGraph · OTT Streaming Specialist
+    </p>
+    <p class="subtext">
+        Building high-performance, bug-free, and memory-efficient Roku streaming
+        applications for VOD, Live TV, and subscription-based platforms.
+    </p>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <!-- ABOUT -->
-        <section class="section">
-            <h2>About Me</h2>
-            <p>
-                I build high-performance Roku streaming applications using BrightScript and SceneGraph.
-                I specialize in UI/UX development, subscription systems, OTT integrations, and Roku certification-ready apps.
-            </p>
-        </section>
+<!-- STATS STRIP -->
+<section class="stats">
+    <div class="stat">
+        <h3>10+ Years</h3>
+        <p>Roku & OTT Development Experience</p>
+    </div>
+
+    <div class="stat">
+        <h3>5+ Apps</h3>
+        <p>Production Roku Channels Delivered</p>
+    </div>
+
+    <div class="stat">
+        <h3>Certification Expert</h3>
+        <p>First-Pass Roku Store Approval</p>
+    </div>
+
+    <div class="stat">
+        <h3>Maintainable Code</h3>
+        <p>Clean architecture, extensible design, memory-efficient apps</p>
+    </div>
+
+    <div class="stat">
+        <h3>High Performance</h3>
+        <p>Optimized playback across all Roku devices</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>About Me</h2>
+
+    <p>
+        I am a Roku developer with <strong>10+ years of experience</strong> in
+        streaming application development. I specialize in building
+        <strong>high-performance, bug-free, and memory-efficient</strong>
+        Roku applications using <strong>BrightScript</strong> and
+        <strong>SceneGraph</strong>.
+    </p>
+
+    <p>
+        My expertise includes designing intuitive OTT user interfaces,
+        implementing robust subscription and billing systems, and integrating
+        ad monetization using the Roku Advertising Framework (RAF).
+        I focus on delivering scalable, production-ready applications that pass
+        Roku certification smoothly and provide a consistent, high-quality user
+        experience across all Roku devices.
+    </p>
+
+    <strong>Core Competencies:</strong>
+    <ul>
+        <li>End-to-end OTT platform integrations</li>
+        <li>SceneGraph-based UI/UX architecture and navigation</li>
+        <li>User authentication and authorization workflows</li>
+        <li>Remote content fetching and JSON-based API integration</li>
+        <li>Content discovery, search, and filtering</li>
+        <li>Playback optimization and custom video controls</li>
+        <li>Subscription and billing systems (SVOD / TVOD)</li>
+        <li>Roku Advertising Framework (RAF) monetization</li>
+        <li>Performance debugging using Roku Resource Monitor</li>
+        <li>Memory and CPU profiling with BrightScript Profiler</li>
+        <li>Roku certification-ready application delivery</li>
+    </ul>
+
+    <p class="quality-note">
+        <em>
+            Focused on clean architecture, optimized memory usage, smooth playback,
+            and long-term maintainability.
+        </em>
+    </p>
+</section>
+
 
         <!-- SKILLS -->
         <section class="section">
             <h2>Skills</h2>
-            <div class="skills">
-                <span class="tag">BrightScript</span>
-                <span class="tag">SceneGraph</span>
-                <span class="tag">Roku UI/UX</span>
-                <span class="tag">Video Player Node</span>
-                <span class="tag">RAF Ads Integration</span>
-                <span class="tag">Authentication (JWT)</span>
-                <span class="tag">JSON API Integration</span>
-                <span class="tag">Git / CLI Debugging</span>
+            <div class="tech-grid">
+                <div>
+                    <h4>Languages & Frameworks</h4>
+                    <p>BrightScript, SceneGraph, Roku SDK</p>
+                </div>
+                <div>
+                    <h4>Streaming & OTT</h4>
+                    <p>HLS, VOD, Live TV, SVOD, AVOD, TVOD, RAF</p>
+                </div>
+                <div>
+                    <h4>Backend & APIs</h4>
+                    <p>REST APIs, JSON, Firebase, AWS, Custom CMS</p>
+                </div>
+                <div>
+                    <h4>Tools</h4>
+                    <p>VS Code, GitHub, Roku Dashboard, Postman</p>
+                </div>
+                <div>
+                    <h4>Debugging & Performance Optimization</h4>
+                    <p>
+                        Roku Advanced Logging Environment (RALE),
+                        BrightScript Profiler,
+                        Roku Resource Monitor
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -130,9 +133,9 @@
             <div class="projects">
 
                 <div class="card">
-                    <h3>MiniStream Player</h3>
-                    <p>A basic Roku streaming app with custom playback controls and a simple content library.</p>
-                    <a href="#">🔗 GitHub Repo</a> &nbsp; | &nbsp; <a href="#">▶ Demo Video</a>
+                    <h3>Zee5</h3>
+                    <p>ZEE5 is a leading OTT streaming platform offering live TV, originals, movies, and shows across 18+ languages, with 1.25 lakh+ hours of content. It delivers a rich, multilingual entertainment experience spanning regional and international programming for a global audience.</p>
+                    <a href="https://channelstore.roku.com/details/fe7c42f42d904b289f1cc6b753f991b9:d8850e307df17ab32d32ebd6eb2fe5de/zee5">📺 Channel Store Link</a>
                 </div>
 
                 <div class="card">
@@ -153,12 +156,30 @@
             </div>
         </section>
 
+        <!-- GALLERY -->
+        <section class="section">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="https://cigars.roku.com/v1/contain/800x454/https%3A%2F%2Fimage.roku.com%2Fdeveloper_channels%2Fprod%2Fab96b84217c8731eaafecdae98e4e16a7d7873fa839ee558d0d3a66d948e6fa6.jpg" alt="Zee5 Screenshot" onclick="openModal(this.src)">
+                    <img src="https://cigars.roku.com/v1/contain/800x454/https%3A%2F%2Fimage.roku.com%2Fdeveloper_channels%2Fprod%2F1b028017c5f1d1444bed7555773365c2e0d456c8d890d3e3b7ad9c62d8fd6a76.jpg" alt="MovieBox UI Screenshot" onclick="openModal(this.src)">
+                    <img src="https://cigars.roku.com/v1/contain/800x454/https%3A%2F%2Fimage.roku.com%2Fdeveloper_channels%2Fprod%2Fdfab03f0fe8116cccf8cd4ba5b2b5307c0432c3d9ac07a49e77e7189f7879a4a.jpg" alt="StreamPlus Premium Screenshot" onclick="openModal(this.src)">
+                    <img src="https://cigars.roku.com/v1/contain/800x454/https%3A%2F%2Fimage.roku.com%2Fdeveloper_channels%2Fprod%2Fa2c36360ab629a97ca425a621de146f22b75137cb9c4746a268c41d684f407b1.jpg" onclick="openModal(this.src)">
+                    <img src="https://cigars.roku.com/v1/contain/800x454/https%3A%2F%2Fimage.roku.com%2Fdeveloper_channels%2Fprod%2F45fd35e57b51eda49cc8b852e36631e3063ba1db558fa09947c21f4ffad76cb0.jpg" alt="Video Player Controls Screenshot" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </section>
+
         <!-- CONTACT -->
         <section class="section">
             <h2>Contact</h2>
             <p>If you'd like to hire me or collaborate, feel free to reach out.</p>
-            <p>📩 <b>Email:</b> <a href="prash.winner@gmail.com">prash.winner@gmail.com</a></p>
-            <p>🔗 LinkedIn | GitHub | Upwork (links go here)</p>
+            <p class="contact-all">
+                <a href="mailto:prash.winner@gmail.com">📩 prash.winner@gmail.com</a>
+                <a href="tel:+918147126152">📱 Call +91-8147126152</a>
+                <a href="https://wa.me/918147126152">💬 WhatsApp</a>
+                <a href="https://www.linkedin.com/in/prashanth-y-n-1b63b7a6/">🔗 LinkedIn</a>
+                <a href="https://github.com/prashantYN?tab=repositories">🐙 GitHub</a>
+            </p>
         </section>
 
     </div>
@@ -167,6 +188,50 @@
     <footer>
         © 2025 Prashanth YN — Roku Developer Portfolio
     </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+        </div>
+    </div>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const track = document.querySelector('.carousel-track');
+        let timeoutId;
+
+        function pauseAnimation() {
+            track.classList.add('paused');
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                track.classList.remove('paused');
+            }, 5000);
+        }
+
+        carousel.addEventListener('scroll', pauseAnimation);
+        track.addEventListener('mousedown', pauseAnimation);
+
+        // Modal functions
+        function openModal(src) {
+            const modal = document.getElementById('modal');
+            const modalImg = document.getElementById('modal-img');
+            modal.style.display = 'block';
+            modalImg.src = src;
+        }
+
+        document.querySelector('.close').addEventListener('click', () => {
+            document.getElementById('modal').style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            const modal = document.getElementById('modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
 
 </body>
 </html>
